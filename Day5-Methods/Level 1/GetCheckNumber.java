@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class CheckNumber {
+public class GetCheckNumber {
     static int checkNumber(int number){
         if (number > 0) {
             return 1;

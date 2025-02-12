@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class DistributeChocolates {
+public class DistributeChocolate {
   static int getChocolatesPerChild(int numberOfChocolates, int numberOfChildren){
       return numberOfChocolates / numberOfChildren;
   }

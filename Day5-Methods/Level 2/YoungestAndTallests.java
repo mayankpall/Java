@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 
-public class YoungestAndTallest {
+public class YoungestAndTallests {
   
       public static String findYoungest(String[] names, int[] ages) {
           int minAgeIndex = 0;

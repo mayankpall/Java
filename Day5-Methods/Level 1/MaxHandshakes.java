@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class MaxHandshake {
+public class MaxHandshakes {
   static int calculateHandshakes(int numberOfStudents) {
         return (numberOfStudents * (numberOfStudents - 1)) / 2;
     }

@@ -1,3 +1,5 @@
+package com.bridgelabz.Day2.Level2;
+
 import java.util.Scanner;
 
 public class RunAthlete {
@@ -5,13 +7,13 @@ public class RunAthlete {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        System.out.print("Enter the first side of the triangular park : ");
+        System.out.print("Enter the first side of the triangular park (in meters): ");
         double side1 = input.nextDouble();
 
-        System.out.print("Enter the second side of the triangular park : ");
+        System.out.print("Enter the second side of the triangular park (in meters): ");
         double side2 = input.nextDouble();
 
-        System.out.print("Enter the third side of the triangular park : ");
+        System.out.print("Enter the third side of the triangular park (in meters): ");
         double side3 = input.nextDouble();
 
         double perimeter = side1 + side2 + side3;
@@ -22,6 +24,6 @@ public class RunAthlete {
 
         input.close();
     }
-  }
 
 
+}

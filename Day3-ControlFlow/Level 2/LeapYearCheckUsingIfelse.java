@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class LeapYearCheckUsingIfElse {
+class LeapYearCheckUsingIfelse {
 
   static void checkLeapYear(int year) {
     if (year % 400 == 0) {
