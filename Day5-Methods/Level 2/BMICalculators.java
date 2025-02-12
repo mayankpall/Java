@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class BMICalculator {
+public class BMICalculators {
 
     public static double calculateBMI(double weight, double heightCm) {
         double heightMeters = heightCm / 100;
