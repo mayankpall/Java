@@ -14,12 +14,12 @@ class School {
     }
 
     public void addStudent(Student student) {
-        students.add(student);
+        this.students.add(student);
     }
 
     public void showStudents() {
         System.out.println("\nStudents in " + schoolName + ":");
-        for (Student student : students) {
+        for (Student student : this.students) {
             System.out.println("- " + student.getStudentName());
         }
     }
@@ -36,13 +36,13 @@ class Student {
     }
 
     public void enrollCourse(Course course) {
-        courses.add(course);
+        this.courses.add(course);
         course.addStudent(this); // Ensuring Many-to-Many relationship
     }
 
     public void showCourses() {
         System.out.println("\nCourses enrolled by " + studentName + ":");
-        for (Course course : courses) {
+        for (Course course : this.courses) {
             System.out.println("- " + course.getCourseName());
         }
     }
@@ -63,12 +63,12 @@ class Course {
     }
 
     public void addStudent(Student student) {
-        students.add(student);
+        this.students.add(student);
     }
 
     public void showEnrolledStudents() {
         System.out.println("\nStudents enrolled in " + courseName + ":");
-        for (Student student : students) {
+        for (Student student : this.students) {
             System.out.println("- " + student.getStudentName());
         }
     }
@@ -78,32 +78,33 @@ class Course {
     }
 }
 
+// Main class to run the system
 public class SchoolCourses {
     public static void main(String[] args) {
         // Creating School
         School srmSchool = new School("SRM School");
 
         // Creating Students
-        Student mayank = new Student("Mayank");
-        Student arnav = new Student("Arnav");
+        Student student1 = new Student("Student A");
+        Student student2 = new Student("Student B");
 
         // Creating Courses
         Course math = new Course("Mathematics");
         Course science = new Course("Science");
 
         // Enrolling Students in Courses
-        mayank.enrollCourse(math);
-        mayank.enrollCourse(science);
-        arnav.enrollCourse(science);
+        student1.enrollCourse(math);
+        student1.enrollCourse(science);
+        student2.enrollCourse(science);
 
         // Adding Students to School
-        srmSchool.addStudent(mayank);
-        srmSchool.addStudent(arnav);
+        srmSchool.addStudent(student1);
+        srmSchool.addStudent(student2);
 
         // Displaying Data
         srmSchool.showStudents();
-        mayank.showCourses();
-        arnav.showCourses();
+        student1.showCourses();
+        student2.showCourses();
         math.showEnrolledStudents();
         science.showEnrolledStudents();
     }

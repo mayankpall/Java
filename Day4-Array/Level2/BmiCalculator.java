@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class BMICalculator {
+public class BmiCalculator {
   static String determineBMIStatus(double bmi) {
     if (bmi <= 18.4) return "Underweight";
     else if (bmi <= 24.9) return "Normal";
