@@ -19,6 +19,7 @@ class Person {
 
 // Worker Interface
 interface Worker {
+
     void performDuties();
 }
 
