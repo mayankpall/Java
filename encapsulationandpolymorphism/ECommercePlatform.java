@@ -36,8 +36,8 @@ abstract class Product {
     public void displayDetails() {
         System.out.println("\nProduct ID: " + productId);
         System.out.println("Name: " + name);
-        System.out.println("Base Price: $" + price);
-        System.out.println("Discount: $" + calculateDiscount());
+        System.out.println("Base Price: " + price);
+        System.out.println("Discount: " + calculateDiscount());
     }
 }
 
@@ -68,7 +68,7 @@ class Electronics extends Product implements Taxable {
 
     @Override
     public String getTaxDetails() {
-        return "Tax (GST @ 18%): $" + calculateTax();
+        return "Tax : " + calculateTax();
     }
 
     @Override
@@ -99,7 +99,7 @@ class Clothing extends Product implements Taxable {
 
     @Override
     public String getTaxDetails() {
-        return "Tax (VAT @ 5%): $" + calculateTax();
+        return "Tax : " + calculateTax();
     }
 
     @Override
@@ -137,7 +137,7 @@ public class ECommercePlatform {
 
         Product laptop = new Electronics(101, "Laptop", 1000);
         Product tshirt = new Clothing(102, "T-Shirt", 50);
-        Product apple = new Groceries(103, "Apple (1kg)", 5);
+        Product apple = new Groceries(103, "Apple ", 5);
 
 
         products.add(laptop);
@@ -145,7 +145,7 @@ public class ECommercePlatform {
         products.add(apple);
 
 
-        System.out.println("\n---- Product Details ----");
+        System.out.println("\nProduct Details");
         for (Product product : products) {
             product.displayDetails();
 
@@ -158,8 +158,8 @@ public class ECommercePlatform {
 
             double finalPrice = product.getPrice() + tax - product.calculateDiscount();
 
-            System.out.println("Final Price: $" + finalPrice);
-            System.out.println("-------------------------");
+            System.out.println("Final Price: " + finalPrice);
+
         }
 
     }
