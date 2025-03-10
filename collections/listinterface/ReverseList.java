@@ -1,4 +1,4 @@
-package com.bridgelabz.collections;
+package com.bridgelabz.collections.listinterface;
 
 import java.util.ArrayList;
 import java.util.Arrays;

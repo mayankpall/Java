@@ -62,7 +62,7 @@ class Gadget extends Product {
     }
 }
 
-
+//generic class
 class ProductCatalog<T extends Product> {
     private List<T> products = new ArrayList<>();
 
