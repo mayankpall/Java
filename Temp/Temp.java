@@ -1,4 +1,4 @@
-package com.bridgelabz;
+package com.bridgelabz.Temp;
 
 public class Temp {
     public static int LastDigit(int num) {
