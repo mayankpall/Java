@@ -1,6 +1,5 @@
 package com.bridgelabz.collections.setinterface;
 
-import java.awt.desktop.SystemEventListener;
 import java.util.HashSet;
 import java.util.Scanner;
 import java.util.Set;
